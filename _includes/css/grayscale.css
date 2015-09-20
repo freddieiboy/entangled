@@ -371,7 +371,7 @@ body {
 }
 
 img.team-member-photo {
-    background: center;
+    background: cover;
     width: 200px;
     height: 200px;
     margin-bottom: 30px;
