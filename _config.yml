@@ -8,7 +8,7 @@ description: "Connecting two people forever."
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary-dark: '#000000'
-  links: '#219ab3'
+  links: '#55DBFF'
 
 # Footer settings
 footer: Your Website
