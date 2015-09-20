@@ -365,3 +365,23 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+
+.team-member-1, .team-member-2 {
+    margin: 100px 0;
+}
+
+img.team-member-photo {
+    background: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.team-bio {
+    padding: 15px;
+}
+
+.social-media a {
+    margin: 10px;
+    font-size: 22px;
+}
