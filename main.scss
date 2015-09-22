@@ -1,0 +1,94 @@
+---
+# This should work
+---
+
+$width: 1000px;
+
+$iw: 500px;
+$ih: 375px;
+$rt: $iw/$ih;
+$height: $width/$rt;
+
+@mixin bp-large {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin bp-small {
+  @media only screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+
+
+.watch {
+  margin: auto;
+  width: $width;
+  height: $height;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/82667/watch-noref.png);
+  background-size: cover;
+  position: relative;
+}
+
+.face {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 50%;
+  background: black;
+  opacity: .9;
+  //line-height: 170px/$iw*$width;
+  background: url(http://i.imgur.com/e9TffC8.png);
+  background-size: cover;
+
+  // tükröződés
+  // reflection
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(145deg, white, transparent 30%);
+  }
+
+
+  // ezeket tekergetni
+  // play with these
+  // méret
+  // size
+  width: 167px/$iw*$width;
+  height: 167px/$iw*$width;
+  // pozíció
+  // position
+  top: 69.2px/$iw*$width;
+  left: 133.7px/$iw*$width;
+  // forgatás
+  // rotate
+  transform: rotateY(31.3deg) rotateX(-17deg);
+}
+
+.watch-small {
+  width: 100%;
+  padding: 40px;
+  @include bp-medium {
+    padding: 140px;
+ }
+  @include bp-small {
+    padding: 140px;
+  }
+  top: 0;
+  left: 0;
+}
+
+.top-download {
+  margin: 20px;
+}
