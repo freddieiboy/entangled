@@ -29,6 +29,7 @@ $height: $width/$rt;
 
 
 
+
 .watch {
   margin: auto;
   width: $width;
@@ -99,7 +100,13 @@ img.phkitty {
 
 .phmessage-block {
   height: 100px;
-  p {
+  .main-message {
     margin-top: 26px;
+  }
+  p {
+    display: inline;
+  }
+  .producthunters {
+    color: #da552f;
   }
 }
